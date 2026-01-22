@@ -1,0 +1,34 @@
+# Data directory (email dumps should not be in the image)
+data/
+
+# Python bytecode
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Environment files (secrets should be injected at runtime)
+.env
+.env.*
+!env.sample
+
+# SQL setup scripts (not needed at runtime)
+*.sql
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Test and eval data (if any)
+evals/__pycache__/
